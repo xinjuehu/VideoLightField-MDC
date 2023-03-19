@@ -1,0 +1,15 @@
+1.The System Environment for GNN Description Coding can be pulled from Docker: 
+docker push xinjuehu/torch_dgl_0_2:tagname
+
+2.The project structure of MDC_coding part is shown below:
+-dataset: dataset dir, can be downloaded from https://uottawa-my.sharepoint.com/personal/xhu009_uottawa_ca/_layouts/15/guestaccess.aspx?folderid=05e3c964ce1684be79dba6cb008af6106&authkey=AagtEANX1d9UOmYq-l5PSeI&e=khuV7z
+-data_preprocessing.py: Split the LF viewpoint sequence for description coding 
+-train_coding.py:  train the GNN, it generate the model file for description decoding
+-load_test.py: un the forward network of the GNN model to decode the description
+-code4new.py: HEVC Codec for separated description viewpoint compression
+-cal_PSNR.py: quality metric calculation
+-data_plot.py: figure draw
+-load_test_P*.log: coding result log
+
+For more information about light field GNN coding, you can check our TOMM paper:
+Xinjue Hu, Jingming Shan, Yu Liu, Lin Zhang, and Shervin Shirmohammadi. 2020. An Adaptive Two-Layer Light Field Compression Scheme Using GNN-Based Reconstruction. ACM Trans. Multimedia Comput. Commun. Appl. 16, 2s, Article 72 (April 2020), 23 pages. https://doi.org/10.1145/3395620

@@ -1,0 +1,8 @@
+The project structure of Description_Scheduling part is shown below:
+-mahimahi: network trace dataset, all has been converted to mahimahi format.
+-Sending_seq.py: Give the optimal sending queue for basic description at the sending side
+-Packetloss_Sim.py: Add packet loss rate simulation to network trace data
+-VP_aggregation.py: Search he best quality description combination according to the basic description that can be received by users
+-Evaulauate_single_trace.py: Compare the performance differences before and after using the scheduling algorithm
+-Eva_muti_scheme.py: Compare the performance differences between the proposed MDC scheme using the scheduling algorithm and other state-of-the-art schemes in the same channel environment
+-Plot_mahimahi.py: Draw the network trace figure
